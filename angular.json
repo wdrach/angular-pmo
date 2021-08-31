@@ -10,7 +10,7 @@
       "prefix": "pmo",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "less"
+          "style": "less"
         }
       },
       "architect": {
