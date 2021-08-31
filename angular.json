@@ -8,6 +8,16 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "pmo",
+      "i18n": {
+        "sourceLocale": {
+          "code": "en-US"
+        },
+        "locales": {
+            "pt": {
+                "translation": "src/localize/messages-pt.xlf"
+            }
+        }
+    },
       "schematics": {
         "@schematics/angular:component": {
           "style": "less"
@@ -22,6 +32,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "i18nMissingTranslation": "error",
             "assets": [
               "src/favicon.ico",
               "src/assets",

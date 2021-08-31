@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="pt">
+    <body>
+      <trans-unit id="a98b8cc8ff6703dfd975793783d2d3ba62d03c4b" datatype="html">
+        <source>Restaurant table with glasses.</source>
+        <target>Mesa de restaurante com copos.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e73ea478d67921eecffdaaffaf7c90616198b5ff" datatype="html">
+        <source>Ordering food has never been easier</source>
+        <target>Pedir comida nunca foi tão fácil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1bc5a646ef4523c55a4a81797f188992e70cd9aa" datatype="html">
+        <source> We make it easier than ever to order gourmet food from your favorite local restaurants. </source>
+        <target> Nós tornamos mais fácil do que nunca pedir comida gourmet do seu restaurante local favorito. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cc30e870ba18a7954b4deb7dca394e2c1e6b6ed4" datatype="html">
+        <source>Choose a Restaurant</source>
+        <target>Escolha um Restaurante</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
