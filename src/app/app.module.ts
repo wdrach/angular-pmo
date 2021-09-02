@@ -17,6 +17,7 @@ import { OrderDetailsComponent } from './order/details/details.component';
 import { MenuItemsComponent } from './order/menu-items/menu-items.component';
 import { OrderListComponent } from './order/list/list.component';
 import { OrderHistoryComponent } from './order/history/history.component';
+import { TranslocoRootModule } from './transloco/transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { OrderHistoryComponent } from './order/history/history.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    TranslocoRootModule
   ],
   providers: [],
   bootstrap: [AppComponent]
