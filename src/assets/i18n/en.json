@@ -1,1 +1,11 @@
-{}
+{
+  "home": {
+    "title": "Ordering food has never been easier",
+    "description": "We make it easier than ever to order gourmet food from your favorite local restaurants.",
+    "button": "Choose a Restaurant",
+    "img-alt": "Restaurant table with glasses."
+  },
+  "menu-items": {
+    "Roasted Salmon": "Roasted Salmon"
+  }
+}

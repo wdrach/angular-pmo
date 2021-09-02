@@ -1,1 +1,11 @@
-{}
+{
+  "home": {
+    "title": "Pedir comida nunca foi tão fácil",
+    "description": "Nós tornamos mais fácil do que nunca pedir comida gourmet do seu restaurante local favorito.",
+    "button": "Escolha um Restaurante",
+    "img-alt": "Mesa de restaurante com copos."
+  },
+  "menu-items": {
+    "Roasted Salmon": "Salmão Assado"
+  }
+}
