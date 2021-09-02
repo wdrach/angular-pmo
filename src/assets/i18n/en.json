@@ -6,6 +6,7 @@
     "img-alt": "Restaurant table with glasses."
   },
   "menu-items": {
-    "Roasted Salmon": "Roasted Salmon"
+    "Roasted Salmon": "Roasted Salmon",
+    "price": "$ {{value}}"
   }
 }

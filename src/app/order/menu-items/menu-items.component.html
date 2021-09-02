@@ -1,6 +1,6 @@
 <li class="list-group-item" *ngFor="let item of data">
     <label *transloco="let t; read: 'menu-items'">
       <input type="checkbox" (change)="toggleItem(item)">
-      {{t(item.name)}} <span class="badge">${{item.price}}</span>
+      {{t(item.name)}} <span class="badge">{{ t('price', { value: item.price }) }}</span>
     </label>
   </li>

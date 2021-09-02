@@ -6,6 +6,7 @@
     "img-alt": "Mesa de restaurante com copos."
   },
   "menu-items": {
-    "Roasted Salmon": "Salmão Assado"
+    "Roasted Salmon": "Salmão Assado",
+    "price": "R$ {{value}}"
   }
 }
