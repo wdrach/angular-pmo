@@ -7,6 +7,7 @@
   },
   "menu-items": {
     "Roasted Salmon": "Salmão Assado",
-    "price": "R$ {{value}}"
-  }
+    "price": "{{currency}} {{value}}"
+  },
+  "currency": "R$"
 }
