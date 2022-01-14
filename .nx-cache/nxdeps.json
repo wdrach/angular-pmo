@@ -1,0 +1,1266 @@
+{
+  "version": "5.0",
+  "deps": {
+    "@angular/animations": "~13.1.0",
+    "@angular/common": "~13.1.0",
+    "@angular/compiler": "~13.1.0",
+    "@angular/core": "~13.1.0",
+    "@angular/forms": "~13.1.0",
+    "@angular/platform-browser": "~13.1.0",
+    "@angular/platform-browser-dynamic": "~13.1.0",
+    "@angular/router": "~13.1.0",
+    "@angular/platform-server": "^12.0.0",
+    "@nrwl/angular": "13.4.4",
+    "@types/socket.io-client": "^1.4.32",
+    "bootstrap": "4.2.1",
+    "core-js": "^3.12.1",
+    "ngx-bootstrap": "^3.2.0",
+    "place-my-order-api": "^1.0.1",
+    "place-my-order-assets": "^0.1.7",
+    "rxjs": "~7.4.0",
+    "socket.io-client": "^2.2.0",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.11.4",
+    "@angular-devkit/build-angular": "~13.1.0",
+    "@angular-eslint/builder": "12.0.0",
+    "@angular-eslint/eslint-plugin": "~13.0.1",
+    "@angular-eslint/eslint-plugin-template": "~13.0.1",
+    "@angular-eslint/schematics": "12.0.0",
+    "@angular-eslint/template-parser": "~13.0.1",
+    "@angular/cli": "~13.1.0",
+    "@angular/compiler-cli": "~13.1.0",
+    "@angular/language-service": "~13.1.0",
+    "@nrwl/cli": "13.4.4",
+    "@nrwl/cypress": "13.4.4",
+    "@nrwl/eslint-plugin-nx": "13.4.4",
+    "@nrwl/jest": "13.4.4",
+    "@nrwl/linter": "13.4.4",
+    "@nrwl/tao": "13.4.4",
+    "@nrwl/workspace": "13.4.4",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/jest": "27.0.2",
+    "@types/node": "14.14.33",
+    "@typescript-eslint/parser": "~5.3.0",
+    "@typescript-eslint/eslint-plugin": "~5.3.0",
+    "eslint-plugin-jsdoc": "^34.8.2",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "cypress": "^9.1.0",
+    "eslint": "8.2.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "jest": "27.2.3",
+    "jest-preset-angular": "11.0.0",
+    "karma": "~6.3.2",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~1.1.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "prettier": "^2.3.1",
+    "protractor": "~7.0.0",
+    "ts-jest": "27.0.5",
+    "ts-node": "~7.0.0",
+    "typescript": "~4.4.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "nodes": {
+    "main-e2e": {
+      "name": "main-e2e",
+      "type": "e2e",
+      "data": {
+        "root": "apps/main-e2e",
+        "sourceRoot": "apps/main-e2e/src",
+        "projectType": "application",
+        "targets": {
+          "e2e": {
+            "executor": "@nrwl/cypress:cypress",
+            "options": {
+              "cypressConfig": "apps/main-e2e/cypress.json",
+              "devServerTarget": "main:serve:development"
+            },
+            "configurations": {
+              "production": {
+                "devServerTarget": "main:serve:production"
+              }
+            }
+          },
+          "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/main-e2e/**/*.{js,ts}"
+              ]
+            }
+          }
+        },
+        "tags": [],
+        "implicitDependencies": [
+          "main"
+        ],
+        "files": [
+          {
+            "file": "apps/main-e2e/.eslintrc.json",
+            "hash": "4c5989b23b5aa8cc7aba2a07d1ae7daee19c1555"
+          },
+          {
+            "file": "apps/main-e2e/cypress.json",
+            "hash": "824c4ccf9f9479e08e81165a792e6259d998d988"
+          },
+          {
+            "file": "apps/main-e2e/src/fixtures/example.json",
+            "hash": "294cbed6ce9e0b948b787452e8676aee486cb3be"
+          },
+          {
+            "file": "apps/main-e2e/src/integration/app.spec.ts",
+            "hash": "b958c0cd81302301d99d0ee4a5ce9f14acadb628"
+          },
+          {
+            "file": "apps/main-e2e/src/support/app.po.ts",
+            "hash": "32934246969c2ecb827ac05677785933a707a54d"
+          },
+          {
+            "file": "apps/main-e2e/src/support/commands.ts",
+            "hash": "310f1fa0e043ffebbbcf575c5a4d17f13a6b14d6"
+          },
+          {
+            "file": "apps/main-e2e/src/support/index.ts",
+            "hash": "3d469a6b6cf31eb66117d73e278bcf74f398f1db"
+          },
+          {
+            "file": "apps/main-e2e/tsconfig.json",
+            "hash": "eed477927cc7ae6bd893346f66121ea1338218e1"
+          }
+        ]
+      }
+    },
+    "main": {
+      "name": "main",
+      "type": "app",
+      "data": {
+        "projectType": "application",
+        "root": "apps/main",
+        "sourceRoot": "apps/main/src",
+        "prefix": "angular-pmo",
+        "generators": {
+          "@schematics/angular:component": {
+            "styleext": "less"
+          }
+        },
+        "targets": {
+          "build": {
+            "executor": "@angular-devkit/build-angular:browser",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/apps/main",
+              "index": "apps/main/src/index.html",
+              "main": "apps/main/src/main.ts",
+              "polyfills": "apps/main/src/polyfills.ts",
+              "tsConfig": "apps/main/tsconfig.app.json",
+              "inlineStyleLanguage": "less",
+              "assets": [
+                "apps/main/src/favicon.ico",
+                "apps/main/src/assets",
+                {
+                  "glob": "**/*",
+                  "input": "node_modules/place-my-order-assets/images/",
+                  "output": "./assets/images"
+                }
+              ],
+              "styles": [
+                "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+                "apps/main/src/styles.less",
+                "node_modules/place-my-order-assets/less/styles.less"
+              ],
+              "scripts": []
+            },
+            "configurations": {
+              "production": {
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kb",
+                    "maximumError": "1mb"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "2kb",
+                    "maximumError": "4kb"
+                  }
+                ],
+                "fileReplacements": [
+                  {
+                    "replace": "apps/main/src/environments/environment.ts",
+                    "with": "apps/main/src/environments/environment.prod.ts"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "buildOptimizer": false,
+                "optimization": false,
+                "vendorChunk": true,
+                "extractLicenses": false,
+                "sourceMap": true,
+                "namedChunks": true
+              }
+            },
+            "defaultConfiguration": "production"
+          },
+          "serve": {
+            "executor": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "browserTarget": "main:build:production"
+              },
+              "development": {
+                "browserTarget": "main:build:development"
+              }
+            },
+            "defaultConfiguration": "development"
+          },
+          "extract-i18n": {
+            "executor": "@angular-devkit/build-angular:extract-i18n",
+            "options": {
+              "browserTarget": "main:build"
+            }
+          },
+          "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "options": {
+              "lintFilePatterns": [
+                "apps/main/src/**/*.ts",
+                "apps/main/src/**/*.html"
+              ]
+            }
+          },
+          "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": [
+              "coverage/apps/main"
+            ],
+            "options": {
+              "jestConfig": "apps/main/jest.config.js",
+              "passWithNoTests": true
+            }
+          }
+        },
+        "tags": [],
+        "files": [
+          {
+            "file": "apps/main/.browserslistrc",
+            "hash": "4f9ac26980c156a3d525267010d5f78144b43519"
+          },
+          {
+            "file": "apps/main/.eslintrc.json",
+            "hash": "57ea6f58fc83e6298866c0890643d1e38811bfae"
+          },
+          {
+            "file": "apps/main/jest.config.js",
+            "hash": "969560c5cd3d436fe2d68d749edd59be900a5e87"
+          },
+          {
+            "file": "apps/main/src/.eslintrc.json",
+            "hash": "40d8d7b6fb88cb70f5bca57fef225acbf4c61248"
+          },
+          {
+            "file": "apps/main/src/app/app-routing.module.ts",
+            "hash": "83dc27b115a61e121ef0b57468aaa89388c662c7",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/router"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/app.component.html",
+            "hash": "9ecea97752f4f8fa071540231b710c03c05f00e9"
+          },
+          {
+            "file": "apps/main/src/app/app.component.less",
+            "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "file": "apps/main/src/app/app.component.spec.ts",
+            "hash": "0ce805d90c0f64f8f368df640b84a15101ca9b75",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/router"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/app.component.ts",
+            "hash": "ea10e43e45e43e70027b73e41a91f8781ef7908e",
+            "deps": [
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/app.module.ts",
+            "hash": "610f29c68e1f223424fe69d7659e1fc004ff72f0",
+            "deps": [
+              "npm:@angular/platform-browser",
+              "npm:@angular/core",
+              "npm:@angular/common",
+              "npm:@angular/forms",
+              "npm:ngx-bootstrap"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/home/home.component.html",
+            "hash": "3effab6552cd0fd72e096b7df0fb55bb61595d1a"
+          },
+          {
+            "file": "apps/main/src/app/home/home.component.less",
+            "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "file": "apps/main/src/app/home/home.component.spec.ts",
+            "hash": "2cc8c548128f4bb77ece39e8fa36fabaccbeab18",
+            "deps": [
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/home/home.component.ts",
+            "hash": "b22dcfdab2d94eef94fb169b56c21baf29f2393d",
+            "deps": [
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/image-url.pipe.spec.ts",
+            "hash": "0b4ba4d45289b26c0f2f3b160bf364ddd4393adf"
+          },
+          {
+            "file": "apps/main/src/app/image-url.pipe.ts",
+            "hash": "68a14ab039945796d14f71517b3c0132a57caa66",
+            "deps": [
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/menu/menu.component.html",
+            "hash": "2c6c529816df6fa3bcd2485181268faf1f405cf4"
+          },
+          {
+            "file": "apps/main/src/app/menu/menu.component.less",
+            "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "file": "apps/main/src/app/menu/menu.component.spec.ts",
+            "hash": "706797e189848b1b9a31d50218e23cf52066ad95",
+            "deps": [
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/menu/menu.component.ts",
+            "hash": "e909385ffd08b834cd93a6a4663b0fbec16b7b37",
+            "deps": [
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/details/details.component.css",
+            "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "file": "apps/main/src/app/order/details/details.component.html",
+            "hash": "f6b4d1c3f9aabea4e94b79f41578227cd51723f6"
+          },
+          {
+            "file": "apps/main/src/app/order/details/details.component.spec.ts",
+            "hash": "585c7a471d5626fbb22a6350f012c9906f388f6c",
+            "deps": [
+              "npm:@angular/common",
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/details/details.component.ts",
+            "hash": "cb23b4283e36fca255ca55f790509cf5db889119",
+            "deps": [
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/history/history.component.css",
+            "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "file": "apps/main/src/app/order/history/history.component.html",
+            "hash": "2f7d847f3f0d06a0c05b63efc495d498aa714915"
+          },
+          {
+            "file": "apps/main/src/app/order/history/history.component.spec.ts",
+            "hash": "686c224e3f119405e884d3896717a0c600766bcf",
+            "deps": [
+              "npm:@angular/common",
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/history/history.component.ts",
+            "hash": "ddbb00d6ac9b5730fe3f6121ae4b7c6a6d3b64eb",
+            "deps": [
+              "npm:@angular/core",
+              "npm:socket.io-client"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/list/list.component.css",
+            "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "file": "apps/main/src/app/order/list/list.component.html",
+            "hash": "4d6019bedc85c3339cc75df820d4e75986729ea5"
+          },
+          {
+            "file": "apps/main/src/app/order/list/list.component.spec.ts",
+            "hash": "826ce30e1f6d9536e3421508ed8b13d1ad98b609",
+            "deps": [
+              "npm:@angular/common",
+              "npm:@angular/core",
+              "npm:@angular/router"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/list/list.component.ts",
+            "hash": "544bb7927a7aef4cdf288d8eb3a9f2428c67b321",
+            "deps": [
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/menu-items/menu-items.component.css",
+            "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "file": "apps/main/src/app/order/menu-items/menu-items.component.html",
+            "hash": "efb5cf181b68dde6df62ee02ce1570138041e344"
+          },
+          {
+            "file": "apps/main/src/app/order/menu-items/menu-items.component.spec.ts",
+            "hash": "404001153f2774a4f3be03a7430701fc5f66d7b1",
+            "deps": [
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/menu-items/menu-items.component.ts",
+            "hash": "534a292652660f478f44ec15dd3aa3ca3f03f915",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/forms"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/order.component.html",
+            "hash": "7a45127bb5060e7ffbdd9752398dbb8e822203bf"
+          },
+          {
+            "file": "apps/main/src/app/order/order.component.less",
+            "hash": "9b46f67203ce228d697c60c8c860a294dd8c2e30"
+          },
+          {
+            "file": "apps/main/src/app/order/order.component.spec.ts",
+            "hash": "f3cfd77150985d5ed8fe2df6a657253bda013d97",
+            "deps": [
+              "npm:@angular/common",
+              "npm:@angular/core",
+              "npm:@angular/forms",
+              "npm:@angular/router"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/order.component.ts",
+            "hash": "efec09859a79b567ecdb0a1986a9e2f52a632ead",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/router",
+              "npm:@angular/forms",
+              "npm:rxjs"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/order.service.spec.ts",
+            "hash": "bbb7e9065004e0e0b8ef9140d59a6cbfca40dab6",
+            "deps": [
+              "npm:@angular/common",
+              "npm:@angular/core"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/order/order.service.ts",
+            "hash": "560b06e25120896c91b5e6747fd6ce516f754b1b",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/common",
+              "npm:rxjs"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/restaurant/detail/detail.component.css",
+            "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "file": "apps/main/src/app/restaurant/detail/detail.component.html",
+            "hash": "e10e353441d789e18eb5f31eecd5bfa0e2ad502f"
+          },
+          {
+            "file": "apps/main/src/app/restaurant/detail/detail.component.spec.ts",
+            "hash": "6bab9bf70affb343d18fbb5b3723c5bccf06483c",
+            "deps": [
+              "npm:@angular/common",
+              "npm:@angular/core",
+              "npm:@angular/router"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/restaurant/detail/detail.component.ts",
+            "hash": "4f6be3f266a85837caf5b247d3ff3d1bcea33937",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/router"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/restaurant/restaurant.component.html",
+            "hash": "56978896a5fd5316128b4973c3a903f7ae3f0cad"
+          },
+          {
+            "file": "apps/main/src/app/restaurant/restaurant.component.less",
+            "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "file": "apps/main/src/app/restaurant/restaurant.component.spec.ts",
+            "hash": "a07839bc0f1ed2c9616bda19555fef9114dc6247",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/forms",
+              "npm:@angular/router",
+              "npm:rxjs"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/restaurant/restaurant.component.ts",
+            "hash": "f3ef3bc3d34daf8889a8c6e91bc48d2ee69774c1",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/forms",
+              "npm:rxjs"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/restaurant/restaurant.service.spec.ts",
+            "hash": "8ea6d093113940bc6031bdd0b16092b5ef9b56ae",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/common"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/restaurant/restaurant.service.ts",
+            "hash": "1e96491c2a5cec2b0a7a974d7fe5bc555885903b",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/common"
+            ]
+          },
+          {
+            "file": "apps/main/src/app/restaurant/restaurant.ts",
+            "hash": "f318fcfdcd4a5fdf957799282338395138532e23"
+          },
+          {
+            "file": "apps/main/src/assets/.gitkeep",
+            "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+          },
+          {
+            "file": "apps/main/src/browserslist",
+            "hash": "37371cb04b9f1986d952499cdf9613c9d5d8ca8c"
+          },
+          {
+            "file": "apps/main/src/environments/environment.prod.ts",
+            "hash": "e8fd5007b948add3f1c5efffe828ffa22ee93a67"
+          },
+          {
+            "file": "apps/main/src/environments/environment.ts",
+            "hash": "c9002e29562718d20e4358d4d5427ab19d4b7f3c"
+          },
+          {
+            "file": "apps/main/src/favicon.ico",
+            "hash": "8081c7ceaf2be08bf59010158c586170d9d2d517"
+          },
+          {
+            "file": "apps/main/src/index.html",
+            "hash": "e93021110973e938b5017740819069546457e720"
+          },
+          {
+            "file": "apps/main/src/karma.conf.js",
+            "hash": "b6e00421c95f925352ccf765b942a8e94c0cdc74",
+            "deps": [
+              "npm:karma-jasmine",
+              "npm:karma-chrome-launcher",
+              "npm:karma-jasmine-html-reporter",
+              "npm:karma-coverage-istanbul-reporter",
+              "npm:@angular-devkit/build-angular"
+            ]
+          },
+          {
+            "file": "apps/main/src/main.ts",
+            "hash": "c7b673cf44b388e9989fe908b78d7d73cd2e1409",
+            "deps": [
+              "npm:@angular/core",
+              "npm:@angular/platform-browser-dynamic"
+            ]
+          },
+          {
+            "file": "apps/main/src/polyfills.ts",
+            "hash": "aa665d6b8740860e1d67de37a26ab362ef8ba974",
+            "deps": [
+              "npm:zone.js"
+            ]
+          },
+          {
+            "file": "apps/main/src/styles.less",
+            "hash": "90d4ee0072ce3fc41812f8af910219f9eea3c3de"
+          },
+          {
+            "file": "apps/main/src/test.ts",
+            "hash": "16317897b1c50a3a71bc775a8d6429f2b4c6cf98",
+            "deps": [
+              "npm:zone.js",
+              "npm:@angular/core",
+              "npm:@angular/platform-browser-dynamic"
+            ]
+          },
+          {
+            "file": "apps/main/src/tsconfig.app.json",
+            "hash": "190fd300b601e168a3d185dbfa2758ab73257479"
+          },
+          {
+            "file": "apps/main/src/tsconfig.spec.json",
+            "hash": "de7733630eb224b246854a20934f792051926e8f"
+          },
+          {
+            "file": "apps/main/tsconfig.app.json",
+            "hash": "9f439121f12d3191e338b54eea283d18a63fab24"
+          },
+          {
+            "file": "apps/main/tsconfig.editor.json",
+            "hash": "20c4afdbf437457984afcb236d4b5e588aec858a"
+          },
+          {
+            "file": "apps/main/tsconfig.json",
+            "hash": "02add216608561f0c4385feaf9c5082f2d71bf60"
+          },
+          {
+            "file": "apps/main/tsconfig.spec.json",
+            "hash": "e70b1ea78035cb8183ce8dd1ab2f8967898f5a8a"
+          }
+        ]
+      }
+    }
+  },
+  "externalNodes": {
+    "npm:@angular/animations": {
+      "type": "npm",
+      "name": "npm:@angular/animations",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/animations"
+      }
+    },
+    "npm:@angular/common": {
+      "type": "npm",
+      "name": "npm:@angular/common",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/common"
+      }
+    },
+    "npm:@angular/compiler": {
+      "type": "npm",
+      "name": "npm:@angular/compiler",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/compiler"
+      }
+    },
+    "npm:@angular/core": {
+      "type": "npm",
+      "name": "npm:@angular/core",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/core"
+      }
+    },
+    "npm:@angular/forms": {
+      "type": "npm",
+      "name": "npm:@angular/forms",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/forms"
+      }
+    },
+    "npm:@angular/platform-browser": {
+      "type": "npm",
+      "name": "npm:@angular/platform-browser",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/platform-browser"
+      }
+    },
+    "npm:@angular/platform-browser-dynamic": {
+      "type": "npm",
+      "name": "npm:@angular/platform-browser-dynamic",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/platform-browser-dynamic"
+      }
+    },
+    "npm:@angular/router": {
+      "type": "npm",
+      "name": "npm:@angular/router",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/router"
+      }
+    },
+    "npm:@angular/platform-server": {
+      "type": "npm",
+      "name": "npm:@angular/platform-server",
+      "data": {
+        "version": "^12.0.0",
+        "packageName": "@angular/platform-server"
+      }
+    },
+    "npm:@nrwl/angular": {
+      "type": "npm",
+      "name": "npm:@nrwl/angular",
+      "data": {
+        "version": "13.4.4",
+        "packageName": "@nrwl/angular"
+      }
+    },
+    "npm:@types/socket.io-client": {
+      "type": "npm",
+      "name": "npm:@types/socket.io-client",
+      "data": {
+        "version": "^1.4.32",
+        "packageName": "@types/socket.io-client"
+      }
+    },
+    "npm:bootstrap": {
+      "type": "npm",
+      "name": "npm:bootstrap",
+      "data": {
+        "version": "4.2.1",
+        "packageName": "bootstrap"
+      }
+    },
+    "npm:core-js": {
+      "type": "npm",
+      "name": "npm:core-js",
+      "data": {
+        "version": "^3.12.1",
+        "packageName": "core-js"
+      }
+    },
+    "npm:ngx-bootstrap": {
+      "type": "npm",
+      "name": "npm:ngx-bootstrap",
+      "data": {
+        "version": "^3.2.0",
+        "packageName": "ngx-bootstrap"
+      }
+    },
+    "npm:place-my-order-api": {
+      "type": "npm",
+      "name": "npm:place-my-order-api",
+      "data": {
+        "version": "^1.0.1",
+        "packageName": "place-my-order-api"
+      }
+    },
+    "npm:place-my-order-assets": {
+      "type": "npm",
+      "name": "npm:place-my-order-assets",
+      "data": {
+        "version": "^0.1.7",
+        "packageName": "place-my-order-assets"
+      }
+    },
+    "npm:rxjs": {
+      "type": "npm",
+      "name": "npm:rxjs",
+      "data": {
+        "version": "~7.4.0",
+        "packageName": "rxjs"
+      }
+    },
+    "npm:socket.io-client": {
+      "type": "npm",
+      "name": "npm:socket.io-client",
+      "data": {
+        "version": "^2.2.0",
+        "packageName": "socket.io-client"
+      }
+    },
+    "npm:tslib": {
+      "type": "npm",
+      "name": "npm:tslib",
+      "data": {
+        "version": "^2.0.0",
+        "packageName": "tslib"
+      }
+    },
+    "npm:zone.js": {
+      "type": "npm",
+      "name": "npm:zone.js",
+      "data": {
+        "version": "~0.11.4",
+        "packageName": "zone.js"
+      }
+    },
+    "npm:@angular-devkit/build-angular": {
+      "type": "npm",
+      "name": "npm:@angular-devkit/build-angular",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular-devkit/build-angular"
+      }
+    },
+    "npm:@angular-eslint/builder": {
+      "type": "npm",
+      "name": "npm:@angular-eslint/builder",
+      "data": {
+        "version": "12.0.0",
+        "packageName": "@angular-eslint/builder"
+      }
+    },
+    "npm:@angular-eslint/eslint-plugin": {
+      "type": "npm",
+      "name": "npm:@angular-eslint/eslint-plugin",
+      "data": {
+        "version": "~13.0.1",
+        "packageName": "@angular-eslint/eslint-plugin"
+      }
+    },
+    "npm:@angular-eslint/eslint-plugin-template": {
+      "type": "npm",
+      "name": "npm:@angular-eslint/eslint-plugin-template",
+      "data": {
+        "version": "~13.0.1",
+        "packageName": "@angular-eslint/eslint-plugin-template"
+      }
+    },
+    "npm:@angular-eslint/schematics": {
+      "type": "npm",
+      "name": "npm:@angular-eslint/schematics",
+      "data": {
+        "version": "12.0.0",
+        "packageName": "@angular-eslint/schematics"
+      }
+    },
+    "npm:@angular-eslint/template-parser": {
+      "type": "npm",
+      "name": "npm:@angular-eslint/template-parser",
+      "data": {
+        "version": "~13.0.1",
+        "packageName": "@angular-eslint/template-parser"
+      }
+    },
+    "npm:@angular/cli": {
+      "type": "npm",
+      "name": "npm:@angular/cli",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/cli"
+      }
+    },
+    "npm:@angular/compiler-cli": {
+      "type": "npm",
+      "name": "npm:@angular/compiler-cli",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/compiler-cli"
+      }
+    },
+    "npm:@angular/language-service": {
+      "type": "npm",
+      "name": "npm:@angular/language-service",
+      "data": {
+        "version": "~13.1.0",
+        "packageName": "@angular/language-service"
+      }
+    },
+    "npm:@nrwl/cli": {
+      "type": "npm",
+      "name": "npm:@nrwl/cli",
+      "data": {
+        "version": "13.4.4",
+        "packageName": "@nrwl/cli"
+      }
+    },
+    "npm:@nrwl/cypress": {
+      "type": "npm",
+      "name": "npm:@nrwl/cypress",
+      "data": {
+        "version": "13.4.4",
+        "packageName": "@nrwl/cypress"
+      }
+    },
+    "npm:@nrwl/eslint-plugin-nx": {
+      "type": "npm",
+      "name": "npm:@nrwl/eslint-plugin-nx",
+      "data": {
+        "version": "13.4.4",
+        "packageName": "@nrwl/eslint-plugin-nx"
+      }
+    },
+    "npm:@nrwl/jest": {
+      "type": "npm",
+      "name": "npm:@nrwl/jest",
+      "data": {
+        "version": "13.4.4",
+        "packageName": "@nrwl/jest"
+      }
+    },
+    "npm:@nrwl/linter": {
+      "type": "npm",
+      "name": "npm:@nrwl/linter",
+      "data": {
+        "version": "13.4.4",
+        "packageName": "@nrwl/linter"
+      }
+    },
+    "npm:@nrwl/tao": {
+      "type": "npm",
+      "name": "npm:@nrwl/tao",
+      "data": {
+        "version": "13.4.4",
+        "packageName": "@nrwl/tao"
+      }
+    },
+    "npm:@nrwl/workspace": {
+      "type": "npm",
+      "name": "npm:@nrwl/workspace",
+      "data": {
+        "version": "13.4.4",
+        "packageName": "@nrwl/workspace"
+      }
+    },
+    "npm:@types/jasmine": {
+      "type": "npm",
+      "name": "npm:@types/jasmine",
+      "data": {
+        "version": "~2.8.8",
+        "packageName": "@types/jasmine"
+      }
+    },
+    "npm:@types/jasminewd2": {
+      "type": "npm",
+      "name": "npm:@types/jasminewd2",
+      "data": {
+        "version": "~2.0.3",
+        "packageName": "@types/jasminewd2"
+      }
+    },
+    "npm:@types/jest": {
+      "type": "npm",
+      "name": "npm:@types/jest",
+      "data": {
+        "version": "27.0.2",
+        "packageName": "@types/jest"
+      }
+    },
+    "npm:@types/node": {
+      "type": "npm",
+      "name": "npm:@types/node",
+      "data": {
+        "version": "14.14.33",
+        "packageName": "@types/node"
+      }
+    },
+    "npm:@typescript-eslint/parser": {
+      "type": "npm",
+      "name": "npm:@typescript-eslint/parser",
+      "data": {
+        "version": "~5.3.0",
+        "packageName": "@typescript-eslint/parser"
+      }
+    },
+    "npm:@typescript-eslint/eslint-plugin": {
+      "type": "npm",
+      "name": "npm:@typescript-eslint/eslint-plugin",
+      "data": {
+        "version": "~5.3.0",
+        "packageName": "@typescript-eslint/eslint-plugin"
+      }
+    },
+    "npm:eslint-plugin-jsdoc": {
+      "type": "npm",
+      "name": "npm:eslint-plugin-jsdoc",
+      "data": {
+        "version": "^34.8.2",
+        "packageName": "eslint-plugin-jsdoc"
+      }
+    },
+    "npm:eslint-plugin-import": {
+      "type": "npm",
+      "name": "npm:eslint-plugin-import",
+      "data": {
+        "version": "^2.23.2",
+        "packageName": "eslint-plugin-import"
+      }
+    },
+    "npm:eslint-plugin-prefer-arrow": {
+      "type": "npm",
+      "name": "npm:eslint-plugin-prefer-arrow",
+      "data": {
+        "version": "^1.2.3",
+        "packageName": "eslint-plugin-prefer-arrow"
+      }
+    },
+    "npm:cypress": {
+      "type": "npm",
+      "name": "npm:cypress",
+      "data": {
+        "version": "^9.1.0",
+        "packageName": "cypress"
+      }
+    },
+    "npm:eslint": {
+      "type": "npm",
+      "name": "npm:eslint",
+      "data": {
+        "version": "8.2.0",
+        "packageName": "eslint"
+      }
+    },
+    "npm:eslint-config-prettier": {
+      "type": "npm",
+      "name": "npm:eslint-config-prettier",
+      "data": {
+        "version": "8.1.0",
+        "packageName": "eslint-config-prettier"
+      }
+    },
+    "npm:eslint-plugin-cypress": {
+      "type": "npm",
+      "name": "npm:eslint-plugin-cypress",
+      "data": {
+        "version": "^2.10.3",
+        "packageName": "eslint-plugin-cypress"
+      }
+    },
+    "npm:jasmine-core": {
+      "type": "npm",
+      "name": "npm:jasmine-core",
+      "data": {
+        "version": "~2.99.1",
+        "packageName": "jasmine-core"
+      }
+    },
+    "npm:jasmine-spec-reporter": {
+      "type": "npm",
+      "name": "npm:jasmine-spec-reporter",
+      "data": {
+        "version": "~4.2.1",
+        "packageName": "jasmine-spec-reporter"
+      }
+    },
+    "npm:jest": {
+      "type": "npm",
+      "name": "npm:jest",
+      "data": {
+        "version": "27.2.3",
+        "packageName": "jest"
+      }
+    },
+    "npm:jest-preset-angular": {
+      "type": "npm",
+      "name": "npm:jest-preset-angular",
+      "data": {
+        "version": "11.0.0",
+        "packageName": "jest-preset-angular"
+      }
+    },
+    "npm:karma": {
+      "type": "npm",
+      "name": "npm:karma",
+      "data": {
+        "version": "~6.3.2",
+        "packageName": "karma"
+      }
+    },
+    "npm:karma-chrome-launcher": {
+      "type": "npm",
+      "name": "npm:karma-chrome-launcher",
+      "data": {
+        "version": "~2.2.0",
+        "packageName": "karma-chrome-launcher"
+      }
+    },
+    "npm:karma-coverage-istanbul-reporter": {
+      "type": "npm",
+      "name": "npm:karma-coverage-istanbul-reporter",
+      "data": {
+        "version": "~2.0.1",
+        "packageName": "karma-coverage-istanbul-reporter"
+      }
+    },
+    "npm:karma-jasmine": {
+      "type": "npm",
+      "name": "npm:karma-jasmine",
+      "data": {
+        "version": "~1.1.2",
+        "packageName": "karma-jasmine"
+      }
+    },
+    "npm:karma-jasmine-html-reporter": {
+      "type": "npm",
+      "name": "npm:karma-jasmine-html-reporter",
+      "data": {
+        "version": "^0.2.2",
+        "packageName": "karma-jasmine-html-reporter"
+      }
+    },
+    "npm:prettier": {
+      "type": "npm",
+      "name": "npm:prettier",
+      "data": {
+        "version": "^2.3.1",
+        "packageName": "prettier"
+      }
+    },
+    "npm:protractor": {
+      "type": "npm",
+      "name": "npm:protractor",
+      "data": {
+        "version": "~7.0.0",
+        "packageName": "protractor"
+      }
+    },
+    "npm:ts-jest": {
+      "type": "npm",
+      "name": "npm:ts-jest",
+      "data": {
+        "version": "27.0.5",
+        "packageName": "ts-jest"
+      }
+    },
+    "npm:ts-node": {
+      "type": "npm",
+      "name": "npm:ts-node",
+      "data": {
+        "version": "~7.0.0",
+        "packageName": "ts-node"
+      }
+    },
+    "npm:typescript": {
+      "type": "npm",
+      "name": "npm:typescript",
+      "data": {
+        "version": "~4.4.3",
+        "packageName": "typescript"
+      }
+    }
+  },
+  "dependencies": {
+    "main-e2e": [
+      {
+        "source": "main-e2e",
+        "target": "main",
+        "type": "implicit"
+      }
+    ],
+    "main": [
+      {
+        "source": "main",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:ngx-bootstrap",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:socket.io-client",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:karma-jasmine",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:karma-chrome-launcher",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:karma-jasmine-html-reporter",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:karma-coverage-istanbul-reporter",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:@angular-devkit/build-angular",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:@angular/platform-browser-dynamic",
+        "type": "static"
+      },
+      {
+        "source": "main",
+        "target": "npm:zone.js",
+        "type": "static"
+      }
+    ]
+  }
+}
