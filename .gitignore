@@ -39,8 +39,3 @@ testem.log
 Thumbs.db
 
 .angular
-
-.nx-cache/*
-!.nx-cache/latestOutputsHashes
-!.nx-cache/latestOutputsHashes/*
-!.nx-cache/nxdeps.json
